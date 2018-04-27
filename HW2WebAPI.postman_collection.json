@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "aff3b47e-cf96-40d2-b9f9-3525f08363f6",
+		"name": "HW2WebAPI",
+		"description": "hw2 web api basic auth and GET, POST, PUT DELETE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f669e24a-12a8-42de-8471-db9b95f919fd",
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://morning-springs-35658.herokuapp.com/get",
+					"protocol": "http",
+					"host": [
+						"morning-springs-35658",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f669e24a-12a8-42de-8471-db9b95f919fd",
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://morning-springs-35658.herokuapp.com/post",
+					"protocol": "http",
+					"host": [
+						"morning-springs-35658",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f669e24a-12a8-42de-8471-db9b95f919fd",
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://morning-springs-35658.herokuapp.com/put",
+					"protocol": "http",
+					"host": [
+						"morning-springs-35658",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"put"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f669e24a-12a8-42de-8471-db9b95f919fd",
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "testuser",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "cu",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://morning-springs-35658.herokuapp.com/delete",
+					"protocol": "http",
+					"host": [
+						"morning-springs-35658",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE auth working request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f669e24a-12a8-42de-8471-db9b95f919fd",
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "poop",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://morning-springs-35658.herokuapp.com/delete",
+					"protocol": "http",
+					"host": [
+						"morning-springs-35658",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE auth failing request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f669e24a-12a8-42de-8471-db9b95f919fd",
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "poop",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://morning-springs-35658.herokuapp.com/delete",
+					"protocol": "http",
+					"host": [
+						"morning-springs-35658",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
